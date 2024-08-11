@@ -1,0 +1,570 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: thang long sans;
+  ;
+}
+
+.container {
+
+  width: 100%;
+  height: 1688px;
+  background-color: #F3F4FF;
+  display: flex;
+
+
+
+}
+
+.background {
+  width: 100%;
+  position: relative;
+  width: 365px;
+  height: 100%;
+  background-color: #0623a4;
+
+
+}
+
+/* Phần logo */
+.logoThanglong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoThanglong img {
+  width: 365px;
+  height: auto;
+}
+
+/* Phần danh sách chọn */
+.list {
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+
+}
+
+.list .logoDashboard {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 24px;
+}
+
+.list .logoDashboard:hover {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 40px 0px 0px 40px;
+  box-shadow: 0px 20px 50px 0px rgba(239, 7, 127, 0.05);
+  background-color: #F3F4FF;
+}
+
+.list .logoDashboard p {
+  color: var(--Color-Gray-2, #C1BBEB);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+
+.list .logoDashboard:hover p {
+  color: var(--Color-Gray-2, #0623a4);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+
+/* Phần chính giữa màn hình */
+
+.main {
+  width: 100%;
+  margin: 0 50px;
+}
+
+.main p {
+
+  font-weight: 1000px;
+  line-height: normal;
+  font-style: normal;
+  font-size: 36px;
+
+}
+
+/* Ô tìm kiếm */
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 171.84px;
+
+}
+
+.searchTitleBox {
+  display: flex;
+  max-width: 500px;
+}
+
+.searchTitleBox input[type="text"] {
+  padding-left: 40px;
+  /* Adjust based on the image size */
+  background: url('./Media/UserDashboard/Search.svg') no-repeat 10px center;
+  background-size: 20px 20px;
+  /* Adjust based on the image size */
+  border: 2px solid #ccc;
+  /* Border color */
+  border-radius: 25px;
+  /* Rounded corners */
+  height: 40px;
+  /* Height of the input box */
+  font-size: 16px;
+  /* Font size */
+  transition: border-color 0.3s ease;
+  /* Smooth transition for border color */
+}
+
+.searchTitleBox input[type="text"]:focus {
+  border-color: #0623a4;
+  /* Change border color on focus */
+  outline: none;
+  /* Remove default outline */
+}
+
+.searchTitleBox input[type="text"]::placeholder {
+  color: #aaa;
+  /* Placeholder text color */
+}
+
+
+
+/* Profile */
+
+.profile {
+  position: relative;
+  width: 100%;
+  height: 367px;
+  flex-shrink: 0;
+  background: var(--Color-White, #0623a4);
+  border-radius: 20px;
+}
+
+
+.profile-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 227px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 0;
+}
+
+/* Trang trí trong profile */
+
+.roundYellow {
+  right: 40px;
+  position: absolute;
+  display: flex;
+  margin-top: 31.7px;
+  width: 261px;
+  height: 275.13px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: var(--Color-Yellow, #FCC43E);
+}
+
+.roundOrange {
+  position: absolute;
+  display: flex;
+  right: 156px;
+  top: 77px;
+  width: 261px;
+  height: 275.13px;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  background: var(--Color-Orange, #FB7D5B);
+
+}
+
+/*  */
+
+.threedot {
+  position: absolute;
+  right: 32px;
+  bottom: 171px;
+
+}
+
+.profile-avatar {
+  position: absolute;
+  z-index: 3;
+  margin: 32px;
+}
+
+.profile-details {
+  margin-top: 72px;
+  display: flex;
+
+  align-items: center;
+  gap: 100px;
+  margin-left: 32px;
+}
+
+.part1profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-details h1 {
+  color: var(--Color-Text, #303972);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.profile-details h5 {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  color: var(--Color-Gray-3, #A098AE);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.profile-details p {
+  color: var(--Color-Text, #303972);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Phần thông tin học viên */
+
+.infoZone {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.infoZone1 {
+  width: 48%;
+  height: auto;
+  background-color: #ffffff;
+  margin-top: 40px;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.infoContent {
+  display: flex;
+  margin: 32px 32px 32px 32px;
+  flex-direction: column;
+  gap: 32px;
+
+}
+
+.infoZone1 h1 {
+
+  color: var(--Color-Text, #303972);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.infoZone1 p {
+  color: var(--Color-Gray-3, #A098AE);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.infoZone1 span {
+  color: var(--Color-Text, #303972);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+.infoZone1 .searchTitleBox {
+
+  max-width: 100%;
+}
+
+.infoContent1stLine {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.infoContent1stLine img {
+  height: 60px;
+  width: 60px;
+  /* flex-shrink: 0; */
+}
+
+.infoZone1 .searchTitleBox input[type="text"] {
+  width: 100%;
+  padding-left: 40px;
+  /* Adjust based on the image size */
+  background: url('./Media/UserDashboard/Search.svg') no-repeat 10px center;
+  background-size: 20px 20px;
+  /* Adjust based on the image size */
+  border: 2px solid #ccc;
+  /* Border color */
+  border-radius: 25px;
+  /* Rounded corners */
+  height: 40px;
+  /* Height of the input box */
+  font-size: 16px;
+  /* Font size */
+  transition: border-color 0.3s ease;
+}
+
+.infoZone1 .searchTitleBox input[type="text"]:focus {
+  border-color: #007BFF;
+  /* Change border color on focus */
+  outline: none;
+  /* Remove default outline */
+}
+
+.infoZone1 .searchTitleBox input[type="text"]::placeholder {
+  color: #aaa;
+  /* Placeholder text color */
+}
+
+/* Liên hệ */
+
+.contactList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactDetails img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.btnEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: var(--Color-Purple, #4D44B5);
+  box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.btnEmail img {
+
+  width: 32px;
+
+  flex-shrink: 0;
+}
+
+.infoMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+.infoMessages p {
+  color: var(--Color-Gray-3, #A098AE);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infoMessages img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+
+}
+
+.viewMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  opacity: 0.5;
+  background: var(--linear-transparent-purple-10, rgba(77, 68, 181, 0.10));
+  box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+  margin-bottom: 0px;
+}
+
+.viewMore:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  opacity: 0.5;
+  background: var(--linear-transparent-purple-10, rgba(77, 68, 181, 0.10));
+  box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+  border: 1px solid #0623a4;
+
+}
+
+.viewMore p {
+  color: var(--Color-Purple, #4D44B5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.viewMore p:hover {
+  color: var(--Color-Purple, #0623a4);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Phần bên phải */
+.rightBar {
+  width: 365px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  padding: 0 32px 0 32px;
+
+}
+
+.rightBar .searchBar {
+
+  justify-content: right;
+  gap: 16px;
+}
+
+.rightBar .profile {
+  padding: 32px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rightBar .profile p {
+  color: #16ff01;
+}
+
+.rightBar .profile span {
+  color: #16ff01;
+}
+
+.rightBar .profile #notPass {
+  color: red;
+}
+
+.rightBar #avatar {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--Color-Gray-2, #C1BBEB);
+}
+
+.rightBar .viewMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  opacity: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+  margin-bottom: 0px;
+
+}
+
+.rightBar .viewMore p {
+  color: #0623a4;
+
+}
+
+.rightBar .infoZone1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  
+}
+
+.rightBar .infoZone1 h1 {
+  color: var(--Color-Text, #303972);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap
+}
+
+
+.contactDetails h6 {
+  white-space: nowrap;
+  color: var(--Color-Gray-3, #A098AE);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightBar .infoZone1 #dots{
+ right: 0px;
+}
+.rightBar .contactDetails {
+  z-index: 1;
+}
+.line {
+  top: 90px;
+  left: 27px;
+  width: 4px; /* Adjust the thickness of the line as needed */
+  background-color: #c3bde6; /* Adjust the color as needed */
+  height: 220px; /* Adjust the height as needed to connect the circles */
+  position: absolute;
+  z-index: 0;
+}
